@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingRight="10dp"
+
+    android:background="@color/white"
+    >
+
+    <LinearLayout
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/wine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/wine"
+                android:textColor="@color/red"
+                android:textSize="18sp" >
+            </TextView>
+
+            <TextView
+                android:id="@+id/date1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/time1"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="2015.5.13"
+                android:paddingTop="3dp"
+                android:textSize="12sp"
+                android:textColor="@color/gray">
+            </TextView>
+            <TextView
+                android:id="@+id/time1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal"
+                android:text="08:25"
+                android:textSize="12sp"
+                android:textColor="@color/gray">
+            </TextView>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        <ListView
+            android:id="@+id/order_details"
+            android:layout_width="300dp"
+            android:layout_height="70dp">
+        </ListView>
+        <ImageView
+            android:id="@+id/statue_img"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_toRightOf="@id/order_details"
+            android:layout_alignTop="@id/order_details"
+            android:src="@mipmap/order_ok"
+            />
+        <TextView
+            android:id="@+id/order_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:layout_alignBottom="@id/statue_img"
+            android:layout_alignRight="@id/statue_img"
+            android:text="订单完成"
+            android:textSize="12sp"
+            android:textColor="@color/gray">
+        </TextView>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/receiver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="收货人： "
+                android:textSize="18sp"
+                android:textColor="@color/gray">
+            </TextView>
+            <TextView
+                android:id="@+id/receiver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/receiver"
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/receiver_name"
+                android:textSize="15sp"
+                android:textColor="@color/gray">
+            </TextView>
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/receiver_name"
+                android:paddingLeft="20dp"
+                android:paddingTop="3dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/phone"
+                android:textSize="15sp"
+                android:textColor="@color/gray">
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/receive_addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="收货地址: "
+                android:textSize="18sp"
+                android:textColor="@color/gray">
+            </TextView>
+            <TextView
+                android:id="@+id/addr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/receive_addr"
+                android:paddingTop="3dp"
+                android:gravity="right"
+                android:text="@string/addr"
+                android:textSize="15sp"
+                android:textColor="@color/gray">
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

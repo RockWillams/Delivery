@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header"
+        layout="@layout/header_layout_one"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/ehouse_header_height" />
+
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/clean_setting_split_color" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dip">
+
+            <include
+                android:id="@+id/tab_order"
+                layout="@layout/bottom_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onFragmentTab"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/tab_msg"
+                layout="@layout/bottom_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onFragmentTab"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/tab_product"
+                layout="@layout/bottom_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onFragmentTab"
+                android:layout_height="wrap_content" />
+
+
+            <include
+                android:id="@+id/tab_my"
+                layout="@layout/bottom_tab_layout"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onFragmentTab"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/container_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/bottom"
+        android:layout_below="@id/header">
+
+    </FrameLayout>
+
+
+</RelativeLayout>

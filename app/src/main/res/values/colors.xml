@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="clean_setting_split_color">#FFCCCCCC</color>
+
+
+    <color name="gray">#ffe6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="red">#ffff0000</color>
+</resources>

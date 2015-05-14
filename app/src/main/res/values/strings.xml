@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Delivery</string>
+
+
+    <string name="wine">酒: </string>
+    <string name="distribution">正在配送</string>
+    <string name="payment">货到付款</string>
+    <string name="sum_money">合计： </string>
+    <string name="receiver_name">柏江龙 </string>
+    <string name="phone"> 18886666888 </string>
+    <string name="addr"> 四川省成都市高新区贵溪街道天府二街蜀都中心二期一栋3单元1702 </string>
+</resources>
